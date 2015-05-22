@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>DMI Tech Chef</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/jquery.mobile-1.3.0.css" />
+    <link rel="stylesheet" href="css/jqm-docs.css" />
+    <link rel="stylesheet" href="css/UIcustom.css" />
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+        // Wait for device API libraries to load
+        //
+        function onLoad() {
+            var wBan = GetScreenWidth();
+
+            if (wBan < 640) {
+                document.getElementById('appBanner').src = 'images/style-small.jpg';
+                var hBan = (wBan * 0.27);
+                //document.getElementById('appBanner').setAttribute("style", "width:" + wBan + 'px !important;height:' + hBan + 'px !important;');
+            }
+            else {
+                document.getElementById('appBanner').src = 'images/style-big.jpg';
+            }
+                
+            document.addEventListener("deviceready", onDeviceReady, false);
+        }
+
+        // device APIs are available
+        //
+        function onDeviceReady() {
+
+            var devicePlatform = device.platform;
+        
+            // Register the event listener
+            setTimeout(function () {
+                navigator.splashscreen.hide();
+            }, 2000);
+
+            if (devicePlatform != null && devicePlatform.toLowerCase().indexOf('android') > -1) {
+                document.addEventListener("backbutton", onBackKeyDown, false);
+            }
+        }
+
+    </script>
+</head>
+<body class="DTbg" onload="onLoad();">
+    <div data-role="page" id="login" data-theme="c" class="tcb">
+        <div data-role="content" >
+           
+            <div class="LoginHolder">
+              
+                <table width="100%" cellpadding="0" cellspacing="0" class="LoginTable">
+                    <tr>
+                        <td class="LoginLeft">
+                           
+                            
+                            <div class="SplashWords">
+                                <p>
+                                    Welcome to DMI’s 3rd annual Tech Chef grilling competition.</p>
+                                <p>
+                                    This competition will test our team's ability to prepare various dishes for our
+                                    guest judges.</p>
+                                <p>
+                                    The most impressive team will receive a championship trophy and take home bragging
+                                    rights for the year!</p>
+                                <p>
+                                    Good luck to all!!</p>
+                            </div>
+                        </td>
+                        <td class="LoginRight">
+                            <div class="LoginDiv">
+                            <div class="LogoHolder"><img src="images/TC-Logo.png" alt=""/></div>
+                                <div class="TitleDiv">
+                                    
+                                    <div class="SiteName">
+                                        EMPLOYEE LOGIN</div>
+                                </div>
+                                <div class="LoginInputs">
+                                    <div data-role="fieldcontain" data-theme="c">
+                                        <label for="txtTabName" data-inline="true">
+                                        </label>
+                                        <input name="txtTabName" id="txtTabName" placeholder="Name" maxlength="50" value="" type="text"
+                                            data-inline="true" />
+                                    </div>
+                                    <div data-role="fieldcontain" data-theme="c">
+                                        <label for="txtTabEmail">
+                                        </label>
+                                        <input name="txtTabEmail" id="txtTabEmail" placeholder="Email" value="" maxlength="25" type="email">
+                                    </div>
+                                    <div data-role="fieldcontain" data-theme="c">
+                                        <a href="#scoreTab" id="btlTabLoginSubmit" name="btlTabLoginSubmit" data-role="button"
+                                            data-inline="true" onclick="return AuthenticateUser('emp', true);">SUBMIT</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="LoginHolderSP">
+             
+                <table width="100%" cellpadding="0" cellspacing="0" class="LoginTable">
+                    <tr>
+                        <td class="Login">
+                            <div class="LoginDiv">
+                            <div class="LogoHolder"><img src="images/TC-Logo.png" alt=""/></div>
+                                <div class="TitleDiv">
+                                                              <div class="SiteName">
+                                        Employee Login</div>
+                                </div>
+                                <div class="LoginInputs">
+                                    <div data-role="fieldcontain" data-theme="c">
+                                        <input name="txtSPName" id="txtSPName" placeholder="Name" value="" maxlength="50" type="text" data-inline="true" />
+                                    </div>
+                                    <div data-role="fieldcontain" data-theme="c">
+                                        <input name="txtSPEmail" id="txtSPEmail" placeholder="Email" maxlength="25" value="" type="email">
+                                    </div>
+                                    <div data-role="fieldcontain">
+                                        <a href="#scoreTab" id="btlSPLoginSubmit" name="btlSPLoginSubmit" data-role="button"
+                                            data-inline="true" onclick="return AuthenticateUser('emp', false);">Submit</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- /content -->
+        </div>
+    </div>
+    <div data-role="page" id="scoreTab" class="type-interior" data-theme="e">
+        <div data-role="header" data-position="fixed" data-theme="e">
+            <div id="tabWelcome" class="UserDiv">
+                Welcome: <span>John Doe</span>
+            </div>
+            <h1>
+                TECHCHEF</h1>
+        </div>
+        <!-- /header -->
+        <div data-role="content" data-theme="e">
+            <div>
+                <table width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="ChefStyle">
+                            <div>
+                                <img id="appBanner" src="images/style-big.jpg" />
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <!--<div id="tabTitle" class="TeamDiv">
+                    Style
+                </div>-->
+                <div id="divOutput" class="ScoreHolder">
+                </div>
+                <div style="width: 100%; height: 20px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).on("mobileinit", function () {
+            $.mobile.defaultPageTransition = 'slide';
+            $.mobile.phonegapNavigationEnabled = true;
+
+            $.mobile.loader.prototype.options.textVisible = true;
+            $.mobile.loader.prototype.options.theme = "a";
+            $.mobile.loader.prototype.options.html = "";
+        });
+        
+    </script>
+    <script type="text/javascript" src="js/jqm-docs.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.3.0.min.js"></script>
+    <script type="text/javascript">
+
+        //        $(window).on("orientationchange", function (event) {
+        //            if ($.mobile.activePage.attr('id') == "scoreTab") {
+        //                $('.content-primary').css({ 'min-height': (GetScreenHeight() - 39) + 'px' });
+        //            }
+        //        });
+
+    </script>
+    <script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
