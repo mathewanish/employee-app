@@ -87,7 +87,7 @@ border:0;
 
 
 .ui-overlay-e {
-background:url(../images/woodbg.jpg) ;
+background-color:#f5c98c;
 }
 
 
@@ -111,7 +111,7 @@ font-size:1em
 }
 
 input.ui-input-text, textarea.ui-input-text{
-font-size:0.9em;
+font-size:1em;
 background-color:#FFF !important;
 font-weight:normal !important;
 }
@@ -209,7 +209,7 @@ margin:0 auto;
 font-family:Arial, sans-serif;
 color:#fff/*{c-body-color}*/;
 text-shadow: 1px /*{c-body-shadow-x}*/ 0  #333 /*{c-body-shadow-color}*/;
-font-size:1em;
+font-size:0.95em;
 }
 
 .SplashWords p{ 
@@ -223,17 +223,20 @@ background: transparent; /* Old browsers */
 }
 
 .ui-btn-up-e {
-    background: linear-gradient(#FFEFAA, #FFE155) repeat scroll 0 0 #FADB4E;
-	background:#FADB4E !important;
-    border: 1px solid #F4C63F;
-    color: #222222;
+	background:#117474 !important;
+    border: 1px solid #117474;
+    color: #fff;
     font-weight: bold;
-    text-shadow: 0 1px 0 #FFFFFF;
+    text-shadow: none;
 	font-family: 'Arvo', 'serif';
 	font-family:Helvetica, Arial, sans-serif;
 }
 .ui-btn-up-e:visited, .ui-btn-up-e a.ui-link-inherit {
-    color: #222222;
+    color: #fff;
+}
+
+.ui-radio-on.ui-btn-active{
+background:#ff8a08;
 }
 
 .LogoHolder{
@@ -433,7 +436,7 @@ div#btnSubmitScore  .ui-btn-corner-all {
 }
 
 .ui-overlay-e {
-background:url(../images/woodbg-320.jpg) ;
+background-color:#f5c98c;
 }
 
 .submitMessage
@@ -596,7 +599,7 @@ margin-top:0.5em !important
 }
 
 .ui-overlay-e {
-background:url(../images/woodbg.jpg) ;
+background-color:#f5c98c;
 }
 
 }
@@ -875,11 +878,11 @@ font-family:Helvetica, Arial, sans-serif;
 }
 
 .ui-btn-hover-e {
-    background: linear-gradient(#FFF5BA, #FBDD52) repeat scroll 0 0 #FBE26F;
-    border: 1px solid #F2C43D;
-    color: #111111;
+    background:#52b5b4;
+    border: 1px solid #52b5b4;
+    color: #fff !important;
     font-weight: bold;
-    text-shadow: 0 1px 0 #FFFFFF;
+    text-shadow:none;
 }
 
 .ui-btn-up-a {
@@ -1201,7 +1204,7 @@ padding:0 30px 20px;
 .LoginDiv{
 width:55%;
 margin:0px auto 0;
-margin-top:50px
+margin-top:-10px
 }
 
 .SplashWords{
