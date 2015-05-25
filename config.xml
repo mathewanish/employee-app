@@ -8,6 +8,8 @@
   <gap:plugin name="org.apache.cordova.splashscreen" />
   <gap:plugin name="org.apache.cordova.network-information" />
   <gap:plugin name="org.apache.cordova.device" />
+  <gap:plugin name="org.apache.cordova.statusbar" />
+
 
   <!-- Platform on which the App is Supported -->
   <gap:platform name="ios" />
@@ -25,6 +27,9 @@
   <preference name="AutoHideSplashScreen" value="false" />
   <!-- android: Timeout for the Splash on Android in milliseconds -->
   <preference name="SplashScreenDelay" value="2000" />
+  <preference name="StatusBarOverlaysWebView" value="false" /> 
+  <preference name="StatusBarBackgroundColor" value="#000000" />
+  <preference name="StatusBarStyle" value="lightcontent" /> 
 
   <!-- Default Icon-->
   <icon src="icon.png" />
