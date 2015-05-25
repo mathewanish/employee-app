@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <widget xmlns = "http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.DMI.eTechChef" version="0.0.1">
-  <name>eTech Chef</name>
-  <description>App for DMI’s 4th annual Tech Chef grilling competition.</description>
+  <name>eTECH CHEF</name>
+  <description>App for DMI’s 4th annual TECH CHEF grilling competition.</description>
   <author href="http://DMInc.com" email="amathew@dminc.in">Anish Mathew</author>
 
   <gap:plugin name="org.apache.cordova.dialogs" />
@@ -82,8 +82,9 @@
   <!-- Retina iPad -->
   <gap:splash src="splashes/ios/1536x2048.png" gap:platform="ios" width="1536" height="2048" />
   <gap:splash src="splashes/ios/2048x1536.png" gap:platform="ios" width="2048" height="1536" />
-  
-  
+
+  <gap:splash src="splashes/android/480x800.png" />
+
   <!-- Android Splash Screen-->
   <gap:splash src="splashes/android/200x320.png" gap:platform="android" gap:qualifier="ldpi" />
   <gap:splash src="splashes/android/320x480.png" gap:platform="android" gap:qualifier="mdpi" />
