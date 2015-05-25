@@ -85,8 +85,8 @@
   
   
   <!-- Android Splash Screen-->
-  <gap:splash src="splashes/android/320x426.png" gap:platform="android" gap:qualifier="ldpi" />
-  <gap:splash src="splashes/android/320x470.png" gap:platform="android" gap:qualifier="mdpi" />
-  <gap:splash src="splashes/android/480x640.png" gap:platform="android" gap:qualifier="hdpi" />
-  <gap:splash src="splashes/android/720x960.png" gap:platform="android" gap:qualifier="xhdpi" />
+  <gap:splash src="splashes/android/200x320.png" gap:platform="android" gap:qualifier="ldpi" />
+  <gap:splash src="splashes/android/320x480.png" gap:platform="android" gap:qualifier="mdpi" />
+  <gap:splash src="splashes/android/480x800.png" gap:platform="android" gap:qualifier="hdpi" />
+  <gap:splash src="splashes/android/720x1280.png" gap:platform="android" gap:qualifier="xhdpi" />
 </widget >
