@@ -54,7 +54,7 @@ border:0;
 	border: 1px solid 		#333 /*{c-bup-border}*/;
 	background: 			#eee /*{c-bup-background-color}*/;
 	color: 					#fff !important /*{c-bup-color}*/;
-	text-shadow: 0 /*{c-bup-shadow-x}*/ 1px /*{c-bup-shadow-y}*/ 0 /*{c-bup-shadow-radius}*/ #777 /*{c-bup-shadow-color}*/;
+	text-shadow: 0 /*{c-bup-shadow-x}*/ 0 /*{c-bup-shadow-y}*/ 0 /*{c-bup-shadow-radius}*/ #777 /*{c-bup-shadow-color}*/;
 	background-image: -webkit-gradient(linear, left top, left bottom, from( #f9c635 /*{c-bup-background-start}*/), to( #e9a80b /*{c-bup-background-end}*/)); /* Saf4+, Chrome */
 	background-image: -webkit-linear-gradient( #f9c635 /*{c-bup-background-start}*/, #e9a80b /*{c-bup-background-end}*/); /* Chrome 10+, Saf5.1+ */
 	background-image:    -moz-linear-gradient( #f9c635 /*{c-bup-background-start}*/, #e9a80b /*{c-bup-background-end}*/); /* FF3.6 */
@@ -62,7 +62,7 @@ border:0;
 	background-image:      -o-linear-gradient( #f9c635 /*{c-bup-background-start}*/, #e9a80b /*{c-bup-background-end}*/); /* Opera 11.10+ */
 	background-image:         linear-gradient( #f9c635 /*{c-bup-background-start}*/, #e9a80b /*{c-bup-background-end}*/);
 	background-image:none; 
-	background:#117474;
+	background:#FF9C22;
 	width:100%;
 	font-weight:normal
 }
@@ -170,11 +170,12 @@ border: 1px solid #555
 
 
 
+
 .ui-content {
     border-width: 0;
     overflow-x: hidden;
     overflow-y: visible;
-    padding: 0;
+    padding: 20px 15px 0;
 }
 
 
@@ -192,10 +193,11 @@ width:auto;
 
 .SiteName{
 font-family:Arial,sans-serif;
-font-size:1em;
-color:#117474;
+font-size:1.2em;
+color:#000;
 text-align:center
 }
+
 
 /*---SMART PHONE CLASSES--*/
 
@@ -254,10 +256,9 @@ width:auto
 .WelcomePara { display:none } 
 	
 .tcb{
-background:#f2bd72 url(../images/TCBackground-small.jpg) !important ;
+background-image:url(../images/TCBackground.jpg) !important ;
 background-position:center top;
-background-repeat:no-repeat !important;
-background-size:100% auto!important;	
+background-size:cover!important;	
 }
 
 .ui-field-contain .ui-controlgroup-controls {
@@ -279,11 +280,18 @@ background-size:100% auto!important;
 }
 
 .LoginHolderSP{
-min-height:420px;
-min-width:320px;
-width:100%;
-height:100%;
+    min-height: 420px;
+    /* min-width: 300px; */
+    width: 100%;
+    height: 100%;
+	margin-top:4%}
 
+.LoginHolderSP{
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(left, #ffffff 26%, #ffffff 26%, #f9da8b 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #ffffff 26%,#ffffff 26%,#f9da8b 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #ffffff 26%,#ffffff 26%,#f9da8b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f9da8b',GradientType=1 ); /* IE6-9 */
 }
 
 .cutlery{
@@ -316,7 +324,7 @@ margin-bottom:5px
 }
 
 .LogoHolder img{
-height:80px;
+height:100px;
 width:auto
 }
 
@@ -355,8 +363,10 @@ width:100%
 float:none;
 margin:0;
 width:100%;
-background:#56bebd;
+background:#FDAE4C;
 color: #fff /*{c-bup-color}*/;
+text-shadow: 0 /*{c-bup-shadow-x}*/ 0 /*{c-bup-shadow-y}*/ 0 /*{c-bup-shadow-radius}*/ #777 /*{c-bup-shadow-color}*/;
+font-weight:normal
 }
 
 .LoginInputs .ui-btn-corner-all {
@@ -450,59 +460,48 @@ background-color:#f5c98c;
 
 @media screen and (min-width:480px) {
 	
-.tcb{
-background-size:100% auto!important;	
-}
-
-.LogoHolder{
-margin-bottom:10px
-}
-
-.LogoHolder img{
-height:110px;
-width:auto
-}
-
 .LoginDiv{
 width:85%;
-margin:150px auto 0;
+margin:100px auto ;
 }
 
-.cutlery{
-height:270px;
-width:290px;
-background:transparent url(../images/Judgebg-360.png) no-repeat left bottom !important ;
-position:absolute;
-bottom:0;
+
+.LogoHolder img {
+height: 135px;
 }
 
-.napkin{
-position:absolute;
-right:0; 
-bottom:0;
-height:250px;
-width:140px;
-background:url(../images/napkin-360.png) no-repeat;
+.SiteName {
+font-size: 1.5em;
 }
 }
 
 
 @media screen and (min-width:590px) {
 	
-.tcb{
-background-size:100% auto!important;	
-}
 
 .LogoHolder img{
-height:130px;
+height:150px;
 width:auto
 }
 
 .LoginHolder{
 display:block !important
 }
+
+.LoginHolder{
+    min-height: 650px;
+    /* min-width: 300px; */
+    width: 100%;
+    height: 100%;
+	margin-top: 150px
+
+}
+
+.LoginHolder{
+
+}
 .LoginTable{
-width:99%;
+width:95%;
 margin:0 auto;
 }
 
@@ -513,10 +512,15 @@ display:none
 .LoginRight{
 width:100% ;
 vertical-align:middle;
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(left, #ffffff 26%, #ffffff 26%, #f9da8b 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #ffffff 26%,#ffffff 26%,#f9da8b 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #ffffff 26%,#ffffff 26%,#f9da8b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f9da8b',GradientType=1 ); /* IE6-9 */
 }
 .LoginDiv{
-width:80%;
-margin:200px auto 0;
+width:90%;
+margin:100px auto ;
 }
 
 #btlTabLoginSubmit{
@@ -611,9 +615,9 @@ background-color:#f5c98c;
 /*---IPAD CLASSES--*/
 .tcb{
 
-	background-image:url(../images/TCBackground-ipad-potrait.jpg) !important ;
-	background-position:left top;
-	background-size: 100% auto !important
+background-image:url(../images/TCBackground.jpg) !important ;
+background-position:left top;
+background-size: cover !important
 }
 
 #scoreTab{
@@ -648,18 +652,18 @@ margin-top:0
 margin:0
 }
 
-.LoginTable{
-width:99%;
-margin:0 auto;
-}
 
+.LoginHolder{
+margin-top: 215px;
+display:block !important
+}
 
 .LoginLeft , .SplashWords{
 display:block
 }
 .LoginLeft{
 width:45%;
-padding:5px;
+padding:0;
 vertical-align:middle;
 }
 
@@ -670,13 +674,14 @@ vertical-align:middle;
 
 
 .LoginDiv{
-margin:150px auto 0;
+margin:50px auto ;
 }
 
 
 
+
 .SplashWords{
-margin:300px auto 0;
+margin:150px auto 0;
 visibility:visible;
 width:350px
 }
@@ -1139,11 +1144,7 @@ padding:17px 10px 0;
 
 @media only screen and (min-width :900px)  {
 	
-.tcb{
-background-image:url(../images/TCBackground-ipad.jpg) !important ;
-background-position:left top;
-background-size: 100% auto !important
-}
+
 
 .ScoreHolder{
 width:650px ;
@@ -1198,28 +1199,19 @@ bottom:0;
 .LoginLeft{
 width:45%;
 vertical-align:middle;
-padding:0 30px 20px;
+
 }
 
-.LoginDiv{
-width:55%;
-margin:0px auto 0;
-margin-top:-10px
+
+.LoginHolder {
+
+    margin-top: 115px;
 }
 
-.SplashWords{
-margin-top:250px;
-}
 
 
 }
 
-@media only screen and (min-width :1024px)  {
-	
-body{
-background-size: 100% auto !important;
-}
-}
 
 
 @media only screen and (min-width :1025px)  {
@@ -1229,7 +1221,7 @@ background-size: 100% auto !important;
 	height:100%;
 background-image:url(../images/TCBackground.jpg) !important ;
 background-position:left top;
-background-size: 100% AUTO!important
+background-size: cover!important
 }
 
 .LoginLeft {
@@ -1238,9 +1230,6 @@ width:50%
 
 .LoginRight {
 width:50%
-}
-.LoginDiv {
-margin-top:0
 }
 
 .SplashWords{
