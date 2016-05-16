@@ -87,8 +87,6 @@
   <splash src="splashes/ios/1536x2048.png" platform="ios" width="1536" height="2048" />
   <splash src="splashes/ios/2048x1536.png" platform="ios" width="2048" height="1536" />
 
-  <splash src="splashes/android/480x800.png" />
-
   <!-- Android Splash Screen-->
   <splash src="splashes/android/200x320.png" platform="android" qualifier="ldpi" />
   <splash src="splashes/android/320x480.png" platform="android" qualifier="mdpi" />
