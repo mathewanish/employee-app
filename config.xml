@@ -24,15 +24,15 @@
   <preference name="prerendered-icon" value="true" />
   <preference name="exit-on-suspend" value="true" />
   <!-- iOS: Auto hides the splash on iOS -->
-  <preference name="AutoHideSplashScreen" value="true" />
+  <preference name="AutoHideSplashScreen" value="false" />
   <!-- android: Timeout for the Splash on Android in milliseconds -->
   <preference name="SplashScreenDelay" value="4000" />
-
   <preference name="StatusBarOverlaysWebView" value="true" />
   <preference name="StatusBarBackgroundColor" value="#000000" />
   <preference name="StatusBarStyle" value="lightcontent" />
   <preference name="FadeSplashScreen" value="true"/>
   <preference name="FadeSplashScreenDuration" value="0.7"/>
+  
   <feature name="SplashScreen">
     <param name="ios-package" value="CDVSplashScreen" />
     <param name="onload" value="true" />
