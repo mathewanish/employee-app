@@ -35,11 +35,12 @@
             var devicePlatform = device.platform;
         
             // Register the event listener
-            //setTimeout(function () {
-            //    navigator.splashscreen.hide();
-            //}, 2000);
+            //navigator.splashscreen.hide();
 
-            
+            /*setTimeout(function () {
+                navigator.splashscreen.hide();
+            }, 2000); */
+
             if (devicePlatform != null && devicePlatform.toLowerCase().indexOf('android') > -1) {
                 document.addEventListener("backbutton", onBackKeyDown, false);
             }
