@@ -287,18 +287,16 @@ background-size:cover!important;
 }
 
 .LoginHolderSP{
-    min-height: 440px;
+    min-height: 420px;
     /* min-width: 300px; */
     width: 100%;
     height: 100%;
-	margin-top:4%}
+	
+	}
 
 .LoginHolderSP{
-background: #ffffff; /* Old browsers */
-background: -moz-linear-gradient(left, #ffffff 26%, #ffffff 26%, #f9da8b 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, #ffffff 26%,#ffffff 26%,#f9da8b 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, #ffffff 26%,#ffffff 26%,#f9da8b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f9da8b',GradientType=1 ); /* IE6-9 */
+background: #f7deb6; /* Old browsers */
+
 }
 
 .cutlery{
@@ -320,7 +318,7 @@ background:url(../images/napkin-320.png) no-repeat;
 
 .LoginDiv{
 width:85%;
-margin:60px auto 0;
+margin:40px auto 0;
 position:relative;
 z-index:10;
 }
@@ -500,7 +498,7 @@ display:block !important
     /* min-width: 300px; */
     width: 100%;
     height: 100%;
-	margin-top: 150px
+	margin-top: 50px
 
 }
 
@@ -519,15 +517,12 @@ display:none
 .LoginRight{
 width:100% ;
 vertical-align:middle;
-background: #ffffff; /* Old browsers */
-background: -moz-linear-gradient(left, #ffffff 26%, #ffffff 26%, #f9da8b 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, #ffffff 26%,#ffffff 26%,#f9da8b 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, #ffffff 26%,#ffffff 26%,#f9da8b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: #f7deb6; /* Old browsers */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f9da8b',GradientType=1 ); /* IE6-9 */
 }
 .LoginDiv{
 width:90%;
-margin:100px auto ;
+margin:40px auto 20px ;
 }
 
 #btlTabLoginSubmit{
@@ -681,7 +676,7 @@ vertical-align:middle;
 
 
 .LoginDiv{
-margin:50px auto ;
+margin:50px auto 20px ;
 }
 
 
