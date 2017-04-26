@@ -16,6 +16,8 @@
   <platform name="ios" />
   <platform name="android" />
 
+  <access origin="*" />
+  
   <content src="index.html" />
   
   <!-- Preferences-->
