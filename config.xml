@@ -14,6 +14,7 @@
   <platform name="ios" />
   <platform name="android" />
 
+  <access origin="*" />
   <content src="index.html" />
   
   <!-- Preferences-->
@@ -21,11 +22,14 @@
   <preference name="orientation" value="portrait" />
   <preference name="target-device" value="universal" />
   <preference name="fullscreen" value="true" />
+  <preference name="android-windowSoftInputMode" value="adjustResize" />
+  <preference name="fullscreen" value="false" />
   <preference name="prerendered-icon" value="true" />
   <preference name="exit-on-suspend" value="true" />
   <!-- iOS: Auto hides the splash on iOS -->
   <preference name="AutoHideSplashScreen" value="false" />
   <!-- android: Timeout for the Splash on Android in milliseconds -->
+  <preference name="android-windowSoftInputMode" value="stateVisible|adjustResize" />
   <preference name="SplashScreen" value="screen"/>
   <preference name="SplashScreenDelay" value="4000" />
   <preference name="StatusBarOverlaysWebView" value="true" />
