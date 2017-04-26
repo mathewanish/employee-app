@@ -67,7 +67,14 @@ border:0;
 }
 
 
-.ui-btn-inner { font-size: 1em; padding:5px 10px; min-width: auto; display: block; position: relative;  text-overflow: ellipsis; overflow: hidden; white-space: nowrap; zoom: 1; }
+.ui-btn-inner { 
+	font-size: 1em; 
+	padding:5px 10px; 
+	min-width: auto; 
+	display: block; 
+	position: relative;  
+	text-overflow: ellipsis; 
+	overflow: hidden; white-space: nowrap; }
 
 .ui-btn-up-c {
 	border: 1px solid 		#333 /*{c-bup-border}*/;
@@ -83,12 +90,12 @@ border:0;
 	background-image:none; 
 	background:#FF9C22;
 	width:100%;
-	font-weight:normal
+	font-weight:normal;
 }
 
 .ui-field-contain, .ui-mobile fieldset.ui-field-contain { border-width: 0; padding: 0; margin: .5em 0 0; }
 
-.ui-field-contain div.ui-input-text { width: auto; display:block; font-size:1em }
+.ui-field-contain div.ui-input-text { width: auto; display:block; font-size:1em; }
 
 
 .ui-body-e {
@@ -143,7 +150,7 @@ min-height:1.7em
 border:1px
 }
 
-.ui-btn-inner { font-size: 1em; padding:8px; min-width: auto; display: inline-block ; position: relative; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; zoom: 1; 
+.ui-btn-inner { font-size: 1em; padding:8px; min-width: auto; display: inline-block ; position: relative; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;  
 }
 
 .ChefStyle img{
@@ -286,357 +293,352 @@ width:auto
 
 @media screen and (min-width:320px) {
 
-.WelcomePara { display:none } 
+	.WelcomePara { display:none } 
 	
-.tcb{
-background-image:url(../images/TCBackground.jpg) !important ;
-background-position:center top;
-background-size:cover!important;	
-}
-
-.ui-field-contain .ui-controlgroup-controls {
-    display: inline-block;
-    width: 100% !important
-}
-
-.ui-header .ui-title, .ui-footer .ui-title {
-    display: block;
-    font-size: 16px;
-    margin: 0.5em  ;
-    min-height: 1.1em;
-    outline: 0 none !important;
-    overflow: hidden;
-    padding: 0;
-    text-align: left;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.LoginHolderSP{
-    min-height: 420px;
-    /* min-width: 300px; */
-    width: 100%;
-    height: 100%;
-	
+	.tcb{
+	background-image:url(../images/TCBackground.jpg) !important ;
+	background-position:center top;
+	background-size:cover!important;	
 	}
 
-.LoginHolderSP{
-background: #f7deb6; /* Old browsers */
+	.ui-field-contain .ui-controlgroup-controls {
+		display: inline-block;
+		width: 100% !important
+	}
 
-}
+	.ui-header .ui-title, .ui-footer .ui-title {
+		display: block;
+		font-size: 16px;
+		margin: 0.5em  ;
+		min-height: 1.1em;
+		outline: 0 none !important;
+		overflow: hidden;
+		padding: 0;
+		text-align: left;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
 
-.cutlery{
-height:350px;
-min-width:220px;
-background:transparent url(../images/Judgebg-320.png) no-repeat left bottom !important ;
-position:absolute;
-bottom:0;
-}
+	.LoginHolderSP{
+		min-height: 420px;
+		/* min-width: 300px; */
+		width: 100%;
+		height: 100%;
+		
+		}
 
-.napkin{
-position:absolute;
-right:0; 
-bottom:0;
-height:150px;
-width:88px;
-background:url(../images/napkin-320.png) no-repeat;
-}
+	.LoginHolderSP{
+	background: #f7deb6; /* Old browsers */
 
-.LoginDiv{
-width:85%;
-margin:20px auto 0;
-position:relative;
-z-index:10;
-}
+	}
 
+	.cutlery{
+	height:350px;
+	min-width:220px;
+	background:transparent url(../images/Judgebg-320.png) no-repeat left bottom !important ;
+	position:absolute;
+	bottom:0;
+	}
 
-.LogoHolder{
-margin-bottom:0px
-}
+	.napkin{
+	position:absolute;
+	right:0; 
+	bottom:0;
+	height:150px;
+	width:88px;
+	background:url(../images/napkin-320.png) no-repeat;
+	}
 
-.LogoHolder img{
-height:100px;
-width:auto
-}
-
-.LoginInputs{
-width:90% ;
-position:relative;
-margin :0 auto;
-padding-bottom:0.5em
-}
-
-
-.LoginInputs label{
-font-weight:bold;
-}
-
-
-.LoginInputs .ui-body-c,
-.LoginInputs .ui-overlay-c{
-background-image:none !important ;
-background-color:#fff ;
-border: 1px solid #ccc;
-border-radius:0;
-}
-
-.LoginInputs .ui-btn-up-c,
-.LoginInputs .ui-btn-hover-c
-{
-float:none;
-margin:0;
-width:100%
-}
+	.LoginDiv{
+	width:85%;
+	margin:20px auto 0;
+	position:relative;
+	z-index:10;
+	}
 
 
-.LoginInputs .ui-btn-hover-c
-{
-float:none;
-margin:0;
-width:100%;
-background:#FDAE4C;
-color: #fff /*{c-bup-color}*/;
-text-shadow: 0 /*{c-bup-shadow-x}*/ 0 /*{c-bup-shadow-y}*/ 0 /*{c-bup-shadow-radius}*/ #777 /*{c-bup-shadow-color}*/;
-font-weight:normal
-}
+	.LogoHolder{
+	margin-bottom:0px;
+	}
 
-.LoginInputs .ui-btn-corner-all {
-	-webkit-border-radius: 				0 /*{global-radii-buttons}*/;
-	border-radius: 						0 /*{global-radii-buttons}*/;
+	.LogoHolder img{
+	height:100px;
+	width:auto;
+	}
 
-}
-
-.UserDiv{
-font-size:12px;
-text-align:right;
-padding:10px 0.5em 0;
-width:auto;
-font-family:Georgia, "Times New Roman", Times, serif;
-font-style:italic;
-position:absolute;
-right:0;
-text-shadow: 1px /*{e-bar-shadow-x}*/ 1px /*{e-bar-shadow-y}*/ #667 /*{e-bar-shadow-color}*/;
-}
-
-#scoreTab{
-background-color:#fff !important
-}
+	.LoginInputs{
+	width:90% ;
+	position:relative;
+	margin :0 auto;
+	padding-bottom:0.5em
+	}
 
 
-.ScoreHolder{
-width:300px ;
-margin:0.8em auto 0;
-}
+	.LoginInputs label{
+	font-weight:bold;
+	}
+
+
+	.LoginInputs .ui-body-c,
+	.LoginInputs .ui-overlay-c{
+	background-image:none !important ;
+	background-color:#fff ;
+	border: 1px solid #ccc;
+	border-radius:0;
+	}
+
+	.LoginInputs .ui-btn-up-c,
+	.LoginInputs .ui-btn-hover-c
+	{
+	float:none;
+	margin:0;
+	width:100%
+	}
+
+
+	.LoginInputs .ui-btn-hover-c
+	{
+	float:none;
+	margin:0;
+	width:100%;
+	background:#FDAE4C;
+	color: #fff /*{c-bup-color}*/;
+	text-shadow: 0 /*{c-bup-shadow-x}*/ 0 /*{c-bup-shadow-y}*/ 0 /*{c-bup-shadow-radius}*/ #777 /*{c-bup-shadow-color}*/;
+	font-weight:normal
+	}
+
+	.LoginInputs .ui-btn-corner-all {
+		-webkit-border-radius: 				0 /*{global-radii-buttons}*/;
+		border-radius: 						0 /*{global-radii-buttons}*/;
+
+	}
+
+	.UserDiv{
+	font-size:12px;
+	text-align:right;
+	padding:10px 0.5em 0;
+	width:auto;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-style:italic;
+	position:absolute;
+	right:0;
+	text-shadow: 1px /*{e-bar-shadow-x}*/ 1px /*{e-bar-shadow-y}*/ #667 /*{e-bar-shadow-color}*/;
+	}
+
+	#scoreTab{
+	background-color:#fff !important;
+	}
+
+
+	.ScoreHolder{
+	width:300px ;
+	margin:0.8em auto 0;
+	}
 
 
 
-.ScoreLeft{
-font-weight:bold;
-font-size:1.1em;
-font-family: 'Arvo', 'serif';
-font-family:Helvetica, Arial, sans-serif;
-font-weight:bold;
-width:300px;
+	.ScoreLeft{
+	font-weight:bold;
+	font-size:1.1em;
+	font-family: 'Arvo', 'serif';
+	font-family:Helvetica, Arial, sans-serif;
+	font-weight:bold;
+	width:300px;
 
-}
-
-
-.ScoreRight{
-width:300px  !important;
-margin-bottom:0.5em;
-
-}
-
-.ui-grid-a > *:nth-child(n) {
-    width: 300px;
-}
-
-.ui-body-d, .ui-overlay-d{
-border: 0 /*{e-body-border}*/;
-background-color:transparent;
-background-image:none;
-font-family: 'Arvo', 'serif';
-font-family:Helvetica, Arial, sans-serif;
-padding:0;
-font-size:16px;
-font-weight:600;
-}
+	}
 
 
-.ui-body-d .scoreControlContainer,
-.ui-overlay-d.scoreControlContainer{
-width:300px;
-margin-top:5px
-}
+	.ScoreRight{
+	width:300px  !important;
+	margin-bottom:0.5em;
 
-.ui-controlgroup-horizontal .ui-checkbox .ui-btn-inner, .ui-controlgroup-horizontal .ui-radio .ui-btn-inner {
-    padding: 0.8em 1.15em;
-}
+	}
 
-div#btnSubmitScore  .ui-btn-corner-all {
-	-webkit-border-radius:0 /*{global-radii-buttons}*/;
-	border-radius:0/*{global-radii-buttons}*/;
-}
+	.ui-grid-a > *:nth-child(n) {
+		width: 300px;
+	}
 
-.ui-overlay-e {
-background-color:#f5c98c;
-}
+	.ui-body-d, .ui-overlay-d{
+	border: 0 /*{e-body-border}*/;
+	background-color:transparent;
+	background-image:none;
+	font-family: 'Arvo', 'serif';
+	font-family:Helvetica, Arial, sans-serif;
+	padding:0;
+	font-size:16px;
+	font-weight:600;
+	}
 
-.submitMessage
-{font-size:1em;
- font-style:italic;
- color:red;
- display:block;
- margin:2px 15px;
-}
+
+	.ui-body-d .scoreControlContainer,
+	.ui-overlay-d.scoreControlContainer{
+	width:300px;
+	margin-top:5px
+	}
+
+	.ui-controlgroup-horizontal .ui-checkbox .ui-btn-inner, .ui-controlgroup-horizontal .ui-radio .ui-btn-inner {
+		padding: 0.8em 1.15em;
+	}
+
+	div#btnSubmitScore  .ui-btn-corner-all {
+		-webkit-border-radius:0 /*{global-radii-buttons}*/;
+		border-radius:0/*{global-radii-buttons}*/;
+	}
+
+	.ui-overlay-e {
+	background-color:#f5c98c;
+	}
+
+	.submitMessage
+	{font-size:1em;
+	 font-style:italic;
+	 color:red;
+	 display:block;
+	 margin:2px 15px;
+	}
 }
 
 @media screen and (min-width:480px) {
-.ui-body-d, .ui-overlay-d{
-	font-size:18px;
-	font-weight:600;
-}
+	.ui-body-d, .ui-overlay-d{
+		font-size:18px;
+		font-weight:600;
+	}
 
-.LoginDiv{
-width:85%;
-margin:100px auto ;
-}
+	.LoginDiv{
+	width:85%;
+	margin:100px auto ;
+	}
 
 
-.LogoHolder img {
-height: 135px;
-}
+	.LogoHolder img {
+	height: 135px;
+	}
 
-.SiteName {
-font-size: 1.5em;
-}
+	.SiteName {
+	font-size: 1.5em;
+	}
 }
 
 
 @media screen and (min-width:590px) {
 	
 
-.LogoHolder img{
-height:150px;
-width:auto
-}
+	.LogoHolder img{
+	height:150px;
+	width:auto;
+	}
 
 /* .LoginHolder{ */
 /* display:block !important */
 /* } */
 
-.LoginHolder{
-    min-height: 650px;
-    /* min-width: 300px; */
-    width: 100%;
-    height: 100%;
-	margin-top: 50px
+	.LoginHolder{
+		min-height: 650px;
+		/* min-width: 300px; */
+		width: 100%;
+		height: 100%;
+		margin-top: 50px
 
-}
+	}
 
-.LoginHolder{
+	.LoginTable{
+	width:95%;
+	margin:0 auto;
+	}
 
-}
-.LoginTable{
-width:95%;
-margin:0 auto;
-}
+	.LoginLeft , .SplashWords{
+	display:none
+	}
 
-.LoginLeft , .SplashWords{
-display:none
-}
+	.LoginRight{
+	width:100% ;
+	vertical-align:middle;
 
-.LoginRight{
-width:100% ;
-vertical-align:middle;
+	}
+	.LoginDiv{
+	width:90%;
+	margin:40px auto 20px ;
+	}
 
-}
-.LoginDiv{
-width:90%;
-margin:40px auto 20px ;
-}
+	#btlTabLoginSubmit{
+	margin-top:1.1em
+	}
 
-#btlTabLoginSubmit{
-margin-top:1.1em
-}
+	.cutlery{
+	height:350px;
+	width:360px;
+	background:transparent url(../images/Judgebg-600.png) no-repeat left bottom !important ;
+	position:absolute;
+	bottom:0;
+	}
+	.napkin{
+	position:absolute;
+	right:0; 
+	bottom:0;
+	height:300px;
+	width:220px;
+	background:url(../images/napkin.png) no-repeat
+	}
 
-.cutlery{
-height:350px;
-width:360px;
-background:transparent url(../images/Judgebg-600.png) no-repeat left bottom !important ;
-position:absolute;
-bottom:0;
-}
-.napkin{
-position:absolute;
-right:0; 
-bottom:0;
-height:300px;
-width:220px;
-background:url(../images/napkin.png) no-repeat
-}
+	.SplashWords{
+	width:80%;
+	margin:0 auto;
+	visibility:hidden
+	}
 
-.SplashWords{
-width:80%;
-margin:0 auto;
-visibility:hidden
-}
+	.ScoreHolder .ui-body-d, .ScoreHolder .ui-overlay-d{
+	border:0;
+	padding:0
+	}
 
+	.ScoreHolder{
+	width:380px;
+	margin:0 auto ;
+	}
 
-
-.ScoreHolder .ui-body-d, .ScoreHolder .ui-overlay-d{
-border:0;
-padding:0
-}
-
-.ScoreHolder{
-width:380px;
-margin:0 auto ;
-}
-
-.ScoreLeft{
-font-weight:bold;
-font-size:1.1em;
-font-family: 'Arvo', 'serif';
-font-family:Helvetica, Arial, sans-serif;
-font-weight:bold;
-width:380px 
-}
+	.ScoreLeft{
+	font-weight:bold;
+	font-size:1.1em;
+	font-family: 'Arvo', 'serif';
+	font-family:Helvetica, Arial, sans-serif;
+	font-weight:bold;
+	width:380px ;
+	}
 
 
-.ScoreRight{
-width:380px  !important;
-}
+	.ScoreRight{
+	width:380px  !important;
+	}
 
-.ui-grid-a > *:nth-child(n) {
-    width: 380px;
-}
+	.ui-grid-a > *:nth-child(n) {
+		width: 380px;
+	}
 
 
-.ScoreLeft .ui-bar, .ScoreLeft .ui-body{
-overflow-y:visible !important;
-}
+	.ScoreLeft .ui-bar, .ScoreLeft .ui-body{
+	overflow-y:visible !important;
+	}
 
-.ui-controlgroup-horizontal .ui-checkbox .ui-btn-inner, .ui-controlgroup-horizontal .ui-radio .ui-btn-inner {
-    padding: 0.7em 25px;
-}
+	.ui-controlgroup-horizontal .ui-checkbox .ui-btn-inner, .ui-controlgroup-horizontal .ui-radio .ui-btn-inner {
+		padding: 0.7em 25px;
+	}
 
-.Positioner{
- margin-top:17px;
- }
-  
+	.Positioner{
+	 margin-top:17px;
+	 }
+	  
 
-.Total{
-margin-top:15px !important;
-}
+	.Total{
+	margin-top:15px !important;
+	}
 
-.ui-grid-a{
-margin-top:0.5em !important
-}
+	.ui-grid-a{
+	margin-top:0.5em !important
+	}
 
-.ui-overlay-e {
-background-color:#f5c98c;
-}
+	.ui-overlay-e {
+	background-color:#f5c98c;
+	}
 
 }
 
@@ -651,17 +653,17 @@ background-color:#f5c98c;
 
 background-image:url(../images/TCBackground.jpg) !important ;
 background-position:left top;
-background-size: cover !important
+background-size: cover !important;
 }
 
 #scoreTab{
-background-color:#fff !important
+background-color:#fff !important;
 }
 
 
 .ui-body-e .ui-content {
 background:#fff !important;
-height:100% !important
+height:100% !important;
 }
 
 
@@ -679,11 +681,11 @@ height:100% !important
 .WelcomePara{
 font-weight:normal;
 text-shadow: 0 /*{e-bar-shadow-x}*/ 1px /*{e-bar-shadow-y}*/ 0 /*{e-bar-shadow-radius}*/ 	#fff /*{e-bar-shadow-color}*/;
-margin-top:0
+margin-top:0;
 }
 
 .WelcomeTitle{
-margin:0
+margin:0;
 }
 
 
@@ -693,7 +695,7 @@ display:block !important
 } */
 
 .LoginLeft , .SplashWords{
-display:block
+display:block;
 }
 .LoginLeft{
 width:45%;
@@ -717,7 +719,7 @@ margin:50px auto 20px ;
 .SplashWords{
 margin:150px auto 0;
 visibility:visible;
-width:350px
+width:350px;
 }
 
 /* .LoginHolder{
@@ -729,7 +731,7 @@ font-size:16px;
 color:#600;
 border-bottom:1px dashed #333;
 padding:5px 0;
-margin-top:20px
+margin-top:20px;
 }
 
 .LoginInputs{
@@ -756,14 +758,8 @@ border-radius:0;
 .LoginInputs .ui-btn-corner-all {
 	-webkit-border-radius: 				0 /*{global-radii-buttons}*/;
 	border-radius: 						0 /*{global-radii-buttons}*/;
-	margin-top:-2px
+	margin-top:-2px;
 }
-
-
-
-
-
-
 
 .TitleDiv{
 padding:0.3em;
@@ -787,10 +783,10 @@ width:auto;
 .SiteName{
 font-family:Arial,sans-serif;
 font-size:0.9em;
-text-align:center
+text-align:center;
 }
 
-.LoginDiv .ui-btn-inner { font-size: 14px; padding:10px; min-width: auto; display: block; position: relative;  text-overflow: ellipsis; overflow: hidden; white-space: nowrap; zoom: 1; }
+.LoginDiv .ui-btn-inner { font-size: 14px; padding:10px; min-width: auto; display: block; position: relative;  text-overflow: ellipsis; overflow: hidden; white-space: nowrap;  }
 
 .LoginDiv .ui-field-contain, .ui-mobile fieldset.ui-field-contain { border-width: 0; padding: 0; margin: 0 ; }
 
@@ -814,7 +810,7 @@ margin: 0;
 
 .TopCategories{
 width:100%;
-background-color:#ffffff
+background-color:#ffffff;
 }
 
 .TopCategories td{
@@ -842,7 +838,7 @@ text-decoration:none !important
 .TopCategories td a div{
 height:160px;
 background-color:#fff;
-text-decoration:none !important
+text-decoration:none !important;
 }
 
 .TopCategories td a div span{
@@ -881,8 +877,6 @@ width:33%;
 	background-position: left top;
 	background-repeat:no-repeat;
 	height:100px;
-
-
 }
 .Desserts div{
 background-image:url(../images/Desserts.jpg);
@@ -924,10 +918,6 @@ font-family:Helvetica, Arial, sans-serif;
 }
 
 
-
-
-
-
 .content-secondary .ui-btn-hover-e {
 	background: 			#fbe26f /*{e-bhover-background-color}*/;
 	background-image: -webkit-gradient(linear, left top, left bottom, from( #ffffff /*{e-bhover-background-start}*/), to( #fff5ba /*{e-bhover-background-end}*/)); /* Saf4+, Chrome */
@@ -938,7 +928,7 @@ font-family:Helvetica, Arial, sans-serif;
 	background-image:         linear-gradient( #ffffff /*{e-bhover-background-start}*/, #fff5ba /*{e-bhover-background-end}*/);
 }
 
-.content-primary .ui-btn-inner { font-size: 1.2em; padding:5px 10px; min-width: auto; display: block; position: relative;  text-overflow: ellipsis; overflow: hidden; white-space: nowrap; zoom: 1; }
+.content-primary .ui-btn-inner { font-size: 1.2em; padding:5px 10px; min-width: auto; display: block; position: relative;  text-overflow: ellipsis; overflow: hidden; white-space: nowrap;  }
 
 .content-primary .ui-btn-up-e {
 	border: 1px solid 		#333 /*{c-bup-border}*/;
@@ -1389,7 +1379,7 @@ input:focus ,.ui-input-text.ui-focus{
 		width:100%;
 		margin:40px auto 20px ;
 		background: #e91c30; /* Old browsers */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f9da8b',GradientType=1 ); /* IE6-9 */
+		
 	}
 	#btlTabLoginSubmit {
 		margin-top: 1.1em;
@@ -1546,7 +1536,7 @@ input:focus ,.ui-input-text.ui-focus{
 /* all media Queries */
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 720px) {
+@media screen and (min-width : 320px) and (max-width : 720px) {
 	.tcb {
 		background-image:url(../images/Chef-Mobile.jpg) !important ;
 		background-color:#e91c30;
@@ -1681,7 +1671,7 @@ input:focus ,.ui-input-text.ui-focus{
 		width: 16.60%;
 	}
 }
-@media only screen and (min-device-width : 640px) and (max-device-width : 767px) {
+@media only screen and (min-width : 640px) and (max-width : 767px) {
 	.LogoHolder {
 		margin-bottom: 5px;
 		top: 40%;
@@ -1726,7 +1716,7 @@ input:focus ,.ui-input-text.ui-focus{
 @media only screen and (min-width : 321px) {
 /* Styles */
 }
-@media only screen and (min-device-width : 320px) and (max-device-width : 479px) {
+@media only screen and (min-width : 320px) and (max-width : 479px) {
 	.ui-controlgroup-horizontal .ui-checkbox .ui-btn-inner, .ui-controlgroup-horizontal .ui-radio .ui-btn-inner {
 		padding: 0;
 	}
@@ -1736,7 +1726,7 @@ input:focus ,.ui-input-text.ui-focus{
 		padding: 10px 0 !important;
 	}
 }
-@media only screen and (min-device-width : 480px) and (max-device-width : 720px) {
+@media screen and (min-width : 480px) and (max-width : 720px) {
 	.ui-controlgroup-horizontal .ui-checkbox .ui-btn-inner, .ui-controlgroup-horizontal .ui-radio .ui-btn-inner {
 		padding: 0;
 	}
@@ -1752,7 +1742,7 @@ input:focus ,.ui-input-text.ui-focus{
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
 .SplashWords p {
 		font-size: 18px !important;
 	}
@@ -1761,11 +1751,11 @@ input:focus ,.ui-input-text.ui-focus{
 	}
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 719px) {
+@media only screen and (min-width : 320px) and (max-width : 719px) {
 
 }
 /* iPads (landscape) ----------- */
-@media only screen and (min-device-width : 721px) and (max-device-width : 1024px) and (orientation : landscape) {
+@media only screen and (min-width : 721px) and (max-width : 1024px) and (orientation : landscape) {
 	.tcb{
 		width:100%;
 		height:100%;
@@ -1915,11 +1905,11 @@ iPad 3
 }
 
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
 /* Styles */
 }
 
-@media only screen and (min-device-width : 1536px) and (max-device-width : 2048px) {
+@media only screen and (min-width : 1536px) and (max-width : 2048px) {
 	.LoginLeft,.LoginRight{
 		vertical-align: middle;
 	}
@@ -1945,7 +1935,7 @@ iPad 3
 		margin-top: 150px !important;
 	}
 }
-@media only screen and (min-device-width : 2048px) and (max-device-width : 2048px) {
+@media only screen and (min-width : 2048px) and (max-width : 2048px) {
 	.LoginLeft,.LoginRight{
 		vertical-align: middle;
 	}
@@ -1966,7 +1956,7 @@ iPad 3
 		border-radius:20px !important;
 	}
 }
-@media only screen and (min-device-width : 1025px) and (max-device-width : 2047px) and (orientation : landscape) {
+@media only screen and (min-width : 1025px) and (max-width : 2047px) and (orientation : landscape) {
 	.LoginLeft,.LoginRight{
 		vertical-align: bottom;
 	}

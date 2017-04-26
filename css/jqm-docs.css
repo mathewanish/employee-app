@@ -386,7 +386,7 @@ dd h4
     text-decoration: none;
 }
 
-@media all and (max-width: 720px)
+@media all and (max-width: 767px)
 {
     .LoginHolder
     {
@@ -401,7 +401,7 @@ dd h4
 }
 
 
-@media all and (min-width: 721px)
+@media all and (min-width: 768px)
 {
      .LoginHolder
     {
