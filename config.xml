@@ -14,7 +14,7 @@
   
   <!-- Platform on which the App is Supported -->
   <platform name="ios" />
-  <!-- <platform name="android" /> -->
+  <platform name="android" />
 
   <content src="index.html" />
   
@@ -30,7 +30,7 @@
   <!-- android: Timeout for the Splash on Android in milliseconds -->
   <preference name="android-windowSoftInputMode" value="stateVisible|adjustResize" />
   <preference name="SplashScreen" value="screen"/>
-  <preference name="SplashScreenDelay" value="4000" />
+  <preference name="SplashScreenDelay" value="3000" />
   <preference name="StatusBarOverlaysWebView" value="true" />
   <preference name="StatusBarBackgroundColor" value="#000000" />
   <preference name="StatusBarStyle" value="lightcontent" />

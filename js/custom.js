@@ -158,7 +158,7 @@ function SubmitScore(isTab, scoreUpdateString) {
         }
     }
     catch (err) {
-        
+        alert("Submit error");
     }
 
     HideLoading();
