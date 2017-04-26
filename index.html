@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="css/jquery.mobile-1.3.0.css" />
     <link rel="stylesheet" href="css/jqm-docs.css" />
-    <link rel="stylesheet" href="css/UIcustom.css" />
-    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <link rel="stylesheet" href="css/UIcustom-new.css" />
+    <!--<script type="text/javascript" charset="utf-8" src="cordova.js"></script>-->
     <script type="text/javascript" charset="utf-8">
 
         // Wait for device API libraries to load
@@ -15,12 +15,12 @@
             var wBan = GetScreenWidth();
 
             if (wBan < 640) {
-                document.getElementById('appBanner').src = 'images/style-small.jpg';
+                document.getElementById('appBanner').src = 'images/Styleimg-small.jpg';
                 var hBan = (wBan * 0.27);
                 document.getElementById('appBanner').setAttribute("style", "width:" + wBan + 'px !important;height:' + hBan + 'px !important;');
             }
             else {
-                document.getElementById('appBanner').src = 'images/style-big.jpg';
+                document.getElementById('appBanner').src = 'images/Styleimg-big.jpg';
             }
                 
             document.addEventListener("deviceready", onDeviceReady, false);
@@ -61,24 +61,26 @@
                             
                             <div class="SplashWords">
                                 <p>
-                                    Welcome to DMI’s 5th annual TECH CHEF grilling competition.</p>
+                                    Welcome to DMI’s 6th annual TECH CHEF grilling competition.</p>
                                 <p>
                                     This competition will test our team's ability to prepare various dishes for our
                                     guest judges.</p>
                                 <p>
                                     The most impressive team will receive a championship trophy and take home bragging
                                     rights for the year!</p>
-                                <p>
+                                <p class="good-luck-text">
                                     Good luck to all!!</p>
                             </div>
                         </td>
                         <td class="LoginRight">
                             <div class="LoginDiv">
-                            <div class="LogoHolder"><img src="images/TC-Logo.png" alt=""/></div>
+								<div class="LoginDivInner">
+								<div class="LogoHolder"><img src="images/TC-Logo.png" alt=""/></div>
                                 <div class="TitleDiv">
                                     
                                     <div class="SiteName">
-                                        Employee Login</div>
+                                        <strong>Employee</strong> Login
+									</div>
                                 </div>
                                 <div class="LoginInputs">
                                     <div data-role="fieldcontain" data-theme="c">
@@ -97,8 +99,9 @@
                                             data-inline="true" onclick="return AuthenticateUser('emp', true);">SUBMIT</a>
                                     </div>
                                 </div>
+								</div>
                             </div>
-                            <div class="LoginImgDiv"><img src="images/foodspread.png" alt="" /></div>
+                            <!-- <div class="LoginImgDiv"><img src="images/foodspread1.png" alt="" /></div> -->
                             
                         </td>
                     </tr>
@@ -111,12 +114,15 @@
                     <tr>
                         <td class="Login">
                             <div class="LoginDiv">
-                            <div class="LogoHolder"><img src="images/TC-Logo.png" alt=""/></div>
-                                <div class="TitleDiv">
-                                                              <div class="SiteName">
-                                        Employee Login</div>
-                                </div>
+								<div class="LogoHolder">
+									<img src="images/Chef_logo.png" alt=""/>
+								</div>
+                               
                                 <div class="LoginInputs">
+									 <div class="TitleDiv">
+										<div class="SiteName">
+											<strong>Employee</strong> Login</div>
+									</div>
                                     <div data-role="fieldcontain" data-theme="c">
                                         <input name="txtSPName" id="txtSPName" placeholder="Name" value="" maxlength="50" type="text" data-inline="true" />
                                     </div>
@@ -125,11 +131,10 @@
                                     </div>
                                     <div data-role="fieldcontain">
                                         <a href="#scoreTab" id="btlSPLoginSubmit" name="btlSPLoginSubmit" data-role="button"
-                                            data-inline="true" onclick="return AuthenticateUser('emp', false);">Submit</a>
+                                            data-inline="true" onclick="return AuthenticateUser('emp', false);">SUBMIT</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="LoginImgDiv"><img src="images/foodspread.png" alt="" /></div>
                         </td>
                     </tr>
                 </table>
@@ -152,7 +157,7 @@
                     <tr>
                         <td class="ChefStyle">
                             <div>
-                                <img id="appBanner" src="images/style-big.jpg" />
+                                <img id="appBanner" src="" />
                             </div>
                         </td>
                     </tr>
@@ -169,14 +174,14 @@
     </div>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript">
-        $(document).on("mobileinit", function () {
+        /*$(document).on("mobileinit", function () {
             $.mobile.defaultPageTransition = 'slide';
             $.mobile.phonegapNavigationEnabled = true;
 
             $.mobile.loader.prototype.options.textVisible = true;
             $.mobile.loader.prototype.options.theme = "a";
             $.mobile.loader.prototype.options.html = "";
-        });
+        });*/
         
     </script>
     <script type="text/javascript" src="js/jqm-docs.js"></script>

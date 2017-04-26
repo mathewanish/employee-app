@@ -1,8 +1,27 @@
+@font-face {
+  font-family: 'ralewayregular';
+  src: url("../fonts/raleway-regular-webfont.eot");
+  src: url("../fonts/raleway-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-regular-webfont.woff2") format("woff2"), url("../fonts/raleway-regular-webfont.woff") format("woff"), url("../fonts/raleway-regular-webfont.ttf") format("truetype"), url("../fonts/raleway-regular-webfont.svg#ralewayregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ralewaysemibold';
+  src: url("../fonts/raleway-semibold-webfont.eot");
+  src: url("../fonts/raleway-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-semibold-webfont.woff2") format("woff2"), url("../fonts/raleway-semibold-webfont.woff") format("woff"), url("../fonts/raleway-semibold-webfont.ttf") format("truetype"), url("../fonts/raleway-semibold-webfont.svg#ralewaysemibold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ralewaylight';
+  src: url("../fonts/raleway-light-webfont.eot");
+  src: url("../fonts/raleway-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-light-webfont.woff2") format("woff2"), url("../fonts/raleway-light-webfont.woff") format("woff"), url("../fonts/raleway-light-webfont.ttf") format("truetype"), url("../fonts/raleway-light-webfont.svg#ralewaylight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+
 body{
 background-color: #f2bd72/*{c-body-background-color}*/;
+font-family: 'ralewayregular';
 }
-
-
 
 .ui-grid-a{
 margin-top:0.8em !important
@@ -20,9 +39,23 @@ margin-top:0.8em !important
 	background:none;
 
 }
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #000;
+}
+input::-moz-placeholder { /* Firefox 19+ */
+  color: #000;
+}
+input:-ms-input-placeholder { /* IE 10+ */
+  color: #000;
+}
+input:-moz-placeholder { /* Firefox 18- */
+  color: #000;
+}
 
-
-
+.ui-body input {
+    min-height: 22px;
+    font-size: 15px;
+}
 
 .ui-overlay-c {
 	border-width: 0;
@@ -31,7 +64,10 @@ margin-top:0.8em !important
 	width:100%
 
 }
-
+.LoginDivInner {
+    width: 86%;
+    margin: 0 auto;
+}
 
 .ui-block-a .ui-bar-e{
 background-color:transparent !important;
@@ -69,7 +105,7 @@ border:0;
 
 .ui-field-contain, .ui-mobile fieldset.ui-field-contain { border-width: 0; padding: 0; margin: .5em 0 0; }
 
-.ui-field-contain div.ui-input-text { width: auto; display:block; font-size:1em }
+.ui-field-contain div.ui-input-text { width: auto; display:block; font-size:1em; }
 
 
 .ui-body-e {
@@ -180,7 +216,7 @@ border: 1px solid #555
 .ui-content {
     border-width: 0;
     overflow-x: hidden;
-    overflow-y: visible;
+    overflow-y: hidden;
     padding: 20px 15px 0;
 }
 
@@ -198,7 +234,7 @@ width:auto;
 }
 
 .SiteName{
-font-family:Arial,sans-serif;
+font-family: 'ralewayregular';
 font-size:1.2em;
 color:#000;
 text-align:center
@@ -214,17 +250,19 @@ text-align:center
 
 .SplashWords{
 margin:0 auto;
-font-family:Arial, sans-serif;
+font-family: 'ralewayregular';
 color:#fff/*{c-body-color}*/;
 text-shadow: 1px /*{c-body-shadow-x}*/ 0  #333 /*{c-body-shadow-color}*/;
 font-size:0.95em;
 }
 
-.SplashWords p{ 
-
-padding:0 20px 0 20px;
+.SplashWords p {
+    padding: 0;
+    margin: 2px 15px 10px 70px;
 }
-
+.good-luck-text{
+	font-size:28px;
+}
 .LoginDiv{
 background: transparent; /* Old browsers */
 
@@ -237,8 +275,7 @@ background: transparent; /* Old browsers */
     color: #fff;
     font-weight: bold;
     text-shadow: none;
-	font-family: 'Arvo', 'serif';
-	font-family:Helvetica, Arial, sans-serif;
+	font-family: 'ralewayregular';
 }
 .ui-btn-up-e:visited, .ui-btn-up-e a.ui-link-inherit {
     color: #fff;
@@ -334,7 +371,7 @@ width:auto
 }
 
 .LoginInputs{
-width:90% ;
+width:100% ;
 position:relative;
 margin :0 auto;
 padding-bottom:0.5em
@@ -385,7 +422,7 @@ font-size:12px;
 text-align:right;
 padding:10px 0.5em 0;
 width:auto;
-font-family:Georgia, "Times New Roman", Times, serif;
+font-family: 'ralewayregular';
 font-style:italic;
 position:absolute;
 right:0;
@@ -407,8 +444,7 @@ margin:0.8em auto 0;
 .ScoreLeft{
 font-weight:bold;
 font-size:1.1em;
-font-family: 'Arvo', 'serif';
-font-family:Helvetica, Arial, sans-serif;
+font-family: 'ralewayregular';
 font-weight:bold;
 width:300px;
 
@@ -429,8 +465,7 @@ margin-bottom:0.5em;
 border: 0 /*{e-body-border}*/;
 background-color:transparent;
 background-image:none;
-font-family: 'Arvo', 'serif';
-font-family:Helvetica, Arial, sans-serif;
+font-family: 'ralewayregular';
 padding:0;
 }
 
@@ -476,7 +511,14 @@ height: 135px;
 }
 
 .SiteName {
-font-size: 1.5em;
+    font-size: 28px;
+    text-shadow: none;
+    text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.9);
+	font-family: 'ralewaylight';
+}
+.SiteName strong{
+	font-family: 'ralewaysemibold';
 }
 }
 
@@ -494,7 +536,7 @@ display:block !important
 }
 
 .LoginHolder{
-    min-height: 650px;
+    /* min-height: 650px; */
     /* min-width: 300px; */
     width: 100%;
     height: 100%;
@@ -506,7 +548,7 @@ display:block !important
 
 }
 .LoginTable{
-width:95%;
+width:100%;
 margin:0 auto;
 }
 
@@ -516,19 +558,22 @@ display:none
 
 .LoginRight{
 width:100% ;
-vertical-align:middle;
-background: #f7deb6; /* Old browsers */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f9da8b',GradientType=1 ); /* IE6-9 */
+vertical-align:bottom;
+
 }
 .LoginDiv{
-width:90%;
+width:100%;
 margin:40px auto 20px ;
+background: #e91c30; /* Old browsers */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f9da8b',GradientType=1 ); /* IE6-9 */
 }
 
-#btlTabLoginSubmit{
-margin-top:1.1em
+#btlTabLoginSubmit {
+    margin-top: 1.1em;
+    background: #353d3f;
+    border: 1px solid #353d3f;
+	font-size:24px;
 }
-
 .cutlery{
 height:350px;
 width:360px;
@@ -567,8 +612,7 @@ margin:0 auto ;
 .ScoreLeft{
 font-weight:bold;
 font-size:1.1em;
-font-family: 'Arvo', 'serif';
-font-family:Helvetica, Arial, sans-serif;
+font-family: 'ralewayregular';
 font-weight:bold;
 width:380px 
 }
@@ -617,7 +661,7 @@ background-color:#f5c98c;
 /*---IPAD CLASSES--*/
 .tcb{
 
-background-image:url(../images/TCBackground.jpg) !important ;
+background-image:url(../images/ipad-landscape-bg.jpg) !important ;
 background-position:left top;
 background-size: cover !important
 }
@@ -660,23 +704,31 @@ margin-top: 215px;
 display:block !important
 }
 
-.LoginLeft , .SplashWords{
+ .SplashWords{
 display:block
+}
+.LoginLeft {
+display:table-cell;
 }
 .LoginLeft{
 width:45%;
 padding:0;
-vertical-align:middle;
+vertical-align:bottom;
+padding-bottom: 100px;
 }
 
 .LoginRight{
-width:55%;
-vertical-align:middle;
+	width:40%;
+	vertical-align:bottom;
+	padding-bottom: 100px;
+	min-width: 220px;
+	padding-right: 100px;
 }
 
 
 .LoginDiv{
-margin:50px auto 20px ;
+margin:0px auto 0px ;
+padding: 30px 10px;
 }
 
 
@@ -685,7 +737,16 @@ margin:50px auto 20px ;
 .SplashWords{
 margin:150px auto 0;
 visibility:visible;
-width:350px
+width:100%;
+padding: 15px 0;
+background: rgba(3,3,3,0.66);
+background: -moz-linear-gradient(left, rgba(3,3,3,0.66) 0%, rgba(0,0,0,0.38) 81%, rgba(0,0,0,0.36) 82%, rgba(0,0,0,0.08) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(3,3,3,0.66)), color-stop(81%, rgba(0,0,0,0.38)), color-stop(82%, rgba(0,0,0,0.36)), color-stop(100%, rgba(0,0,0,0.08)));
+background: -webkit-linear-gradient(left, rgba(3,3,3,0.66) 0%, rgba(0,0,0,0.38) 81%, rgba(0,0,0,0.36) 82%, rgba(0,0,0,0.08) 100%);
+background: -o-linear-gradient(left, rgba(3,3,3,0.66) 0%, rgba(0,0,0,0.38) 81%, rgba(0,0,0,0.36) 82%, rgba(0,0,0,0.08) 100%);
+background: -ms-linear-gradient(left, rgba(3,3,3,0.66) 0%, rgba(0,0,0,0.38) 81%, rgba(0,0,0,0.36) 82%, rgba(0,0,0,0.08) 100%);
+background: linear-gradient(to right, rgba(3,3,3,0.66) 0%, rgba(0,0,0,0.38) 81%, rgba(0,0,0,0.36) 82%, rgba(0,0,0,0.08) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#030303', endColorstr='#000000', GradientType=1 );
 }
 
 .LoginHolder{
@@ -701,7 +762,7 @@ margin-top:20px
 }
 
 .LoginInputs{
-width:90%;
+width:100%;
 position:relative;
 margin:0 auto;
 }
@@ -715,9 +776,11 @@ font-weight:bold;
 .LoginInputs .ui-body-c,
 .LoginInputs .ui-overlay-c{
 background-image:none !important ;
-background-color:#fff !important ;
+background:#fff !important;
 border: 1px solid #ccc;
+color:#000 !important;
 border-radius:0;
+text-shadow:none;
 }
 
 
@@ -733,13 +796,12 @@ border-radius:0;
 
 
 
-.TitleDiv{
-padding:0.3em;
-font-family: 'Arvo', 'serif';
-font-family:Helvetica, Arial, sans-serif;
-font-size:1.5em;
-text-align:center !important;
-
+.TitleDiv {
+    padding: 0.3em;
+    font-family: 'ralewayregular';
+    font-size: 1.5em;
+    text-align: center !important;
+    border-bottom: 1px solid #fff;
 }
 
 .SiteLogo{
@@ -752,10 +814,12 @@ height:75px;
 width:auto;
 }
 
-.SiteName{
-font-family:Arial,sans-serif;
-font-size:0.9em;
-text-align:center
+..SiteName {
+    font-family: 'ralewayregular';
+    font-size: 0.9em;
+    text-align: center;
+    text-shadow: none;
+	color:#fff;
 }
 
 .LoginDiv .ui-btn-inner { font-size: 14px; padding:10px; min-width: auto; display: block; position: relative;  text-overflow: ellipsis; overflow: hidden; white-space: nowrap; zoom: 1; }
@@ -767,7 +831,7 @@ text-align:center
 /* Innerpage Branding */
 .ui-body-e .ui-content{
 padding:0 ;
-font-family:Georgia, "Times New Roman", Times, serif;
+font-family: 'ralewayregular';
 }
 
 
@@ -777,7 +841,7 @@ padding: 0 ;
 margin: 0;
 }
 
-.ui-content { border-width: 0; overflow: visible; overflow-x: hidden; padding: 0; }
+.ui-content { border-width: 0; overflow: hidden; overflow-x: hidden; padding: 0; }
 
 
 .TopCategories{
@@ -789,8 +853,8 @@ background-color:#ffffff
 text-align:center;
 padding:0;
 border-left:2px solid #fff;
-font-family: 'Arvo', 'serif';
 font-family:Helvetica, Arial, sans-serif;
+font-family: 'ralewayregular';
 font-size:1.2em;
 background-color:#FC0;
 text-shadow: 1px /*{e-body-shadow-x}*/ 1px /*{e-body-shadow-y}*/ 0 /*{e-body-shadow-radius}*/ 	#555 /*{e-body-shadow-color}*/;
@@ -822,12 +886,9 @@ color:#fff;
 padding:0.3em 0;
 }
 
-
-
 .TopCategories td a div span.selected{
 background-color:#fbbd01;
 }
-
 
 .Appetizers,
 .Entrees{
@@ -880,8 +941,8 @@ font-weight:bold
 
 
 .ui-link-inherit{
-font-family: 'Arvo', 'serif';
 font-family:Helvetica, Arial, sans-serif;
+font-family: 'ralewayregular';
 }
 
 .ui-btn-hover-e {
@@ -939,8 +1000,8 @@ font-family:Helvetica, Arial, sans-serif;
 .TeamDiv{
 font-size:1.4em;
 font-weight:bold;
-font-family: 'Arvo', 'serif';
 font-family:Helvetica, Arial, sans-serif;
+font-family: 'ralewayregular';
 color:#ffffff;
 text-shadow: 1px 1px #333 ;
 text-align:center;
@@ -1007,8 +1068,9 @@ background-color:#999
 
 
 .ui-mobile .ui-header .ui-title{font-size: 1.5em; 
-font-family: 'Arvo', 'serif';
+
 font-family:Helvetica, Arial, sans-serif;
+font-family: 'ralewayregular';
 color:#f8f8f8;
 text-shadow: 1px 1px #777;
 }
@@ -1158,8 +1220,8 @@ margin:0 auto;
 .ScoreLeft{
 font-weight:bold;
 font-size:1.1em;
-font-family: 'Arvo', 'serif';
 font-family:Helvetica, Arial, sans-serif;
+font-family: 'ralewayregular';
 font-weight:bold;
 width:250px 
 }
@@ -1200,14 +1262,14 @@ bottom:0;
 
 .LoginLeft{
 width:45%;
-vertical-align:middle;
+vertical-align:bottom;
 
 }
 
 
 .LoginHolder {
 
-    margin-top: 115px;
+    margin-top: 0px;
 }
 
 
@@ -1215,13 +1277,17 @@ vertical-align:middle;
 }
 
 
-
+div#login, 
+div#login .ui-content,
+.LoginTable {
+    height: 100%;
+}
 @media only screen and (min-width :1025px)  {
 	
 .tcb{
 	width:100%;
 	height:100%;
-background-image:url(../images/TCBackground.jpg) !important ;
+background-image:url(../images/ipad-landscape-bg.jpg);
 background-position:left top;
 background-size: cover!important
 }
@@ -1231,11 +1297,159 @@ width:50%
 }
 
 .LoginRight {
-width:50%
+    width: 20%;
+    min-width: 260px;
+	padding-right: 100px;
 }
 
 .SplashWords{
 width:500px;
 }
+}
+
+
+/* all media Queries */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	.tcb{
+		width:100%;
+		height:100%;
+		background-image:url(../images/ipad-landscape-bg.jpg);
+		background-position:left top;
+		background-size: cover!important
+	}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	.tcb{
+		width:100%;
+		height:100%;
+		background-image:url(../images/ipad-potrait-bg.jpg) !important;
+		background-position:left top;
+		background-size: cover!important
+	}
+	.LoginHolder{
+		margin-top:0;
+	}
+	.LoginRight{
+		background: #e91c30;
+		padding-right:00px !important;
+		padding-bottom:100px;
+		vertical-align: middle;
+	}
+	.LoginLeft{
+		vertical-align: top;
+		padding-bottom:200px;
+	}
+	.LoginDiv {
+		width: 95%;
+	}
+	.SplashWords {
+		margin: 90px auto 0;
+	}
+}
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
 }
 
