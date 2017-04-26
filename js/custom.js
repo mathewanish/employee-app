@@ -55,8 +55,7 @@ $('#login').on('pagebeforeshow', function (event, ui) {
 });
 
 $('#login').on('pageshow', function (event, ui) {
-    alert('tset');
-    $('#login').trigger('refresh');
+   
 });
 
 
