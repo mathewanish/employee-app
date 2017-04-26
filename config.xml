@@ -11,12 +11,15 @@
   <plugin name="org.apache.cordova.device" />
   <plugin name="cordova-plugin-splashscreen" source="npm" />
   <plugin name="cordova-plugin-splashscreen" spec="3.2.2" />
+  <plugin name="cordova-plugin-whitelist" source="npm" />
+  <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
   
   <!-- Platform on which the App is Supported -->
   <platform name="ios" />
   <platform name="android" />
 
   <access origin="*" />
+  <allow-navigation href="*" />
   
   <content src="index.html" />
   
