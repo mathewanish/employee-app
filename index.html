@@ -24,9 +24,6 @@
             }
                 
             document.addEventListener("deviceready", onDeviceReady, false);
-           
-            document.addEventListener("showkeyboard", function () { $("#login").width(GetScreenWidth()); NotifyUser('ShowKeyboard'); }, false);
-            document.addEventListener("hidekeyboard", function () { $("#login").width(GetScreenWidth()); NotifyUser('HideKeyboard') }, false);
         }
 
         // device APIs are available
@@ -47,8 +44,6 @@
             if (devicePlatform != null && devicePlatform.toLowerCase().indexOf('android') > -1) {
                 document.addEventListener("backbutton", onBackKeyDown, false);
             }
-
-            $("#login").width(GetScreenWidth());
         }
 
     </script>
