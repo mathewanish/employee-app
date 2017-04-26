@@ -21,7 +21,7 @@
   <!-- Preferences-->
   <preference name="phonegap-version" value="cli-6.5.0" />
   <preference name="orientation" value="portrait" />
-  <preference name="target-device" value="universal" />
+ <!-- <preference name="target-device" value="universal" /> -->
   <preference name="fullscreen" value="false" />
   <preference name="prerendered-icon" value="true" />
   <preference name="exit-on-suspend" value="true" />
