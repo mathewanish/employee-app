@@ -1,4 +1,4 @@
-﻿var SERVICE_BASEURL = "http://techchef.dminc.com/";
+﻿var SERVICE_BASEURL = "https://dmitc.azurewebsites.net/";
 //var SERVICE_BASEURL = "http://techchef.dminc.com/";
 //var Url = "http://61.8.142.155:5555/Chef/help";
 //var Url = "http://61.8.142.155:5555/Chef/Auth";
