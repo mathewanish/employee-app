@@ -56,7 +56,7 @@
   <icon src="icons/android/hdpi.png" platform="android" qualifier="hdpi" />
   <icon src="icons/android/xhdpi.png" platform="android" qualifier="xhdpi" />s
   <icon src="icons/android/xxhdpi.png" platform="android" qualifier="xxhdpi" />
-  <icon src="icons/android/xxxhdpi.png" platform="android" qualifier="xxhdpi" />
+  <icon src="icons/android/xxxhdpi.png" platform="android" qualifier="xxxhdpi" />
   <icon src="icons/android/xxxhdpi.png" platform="android" qualifier="fr-xxhdpi" />
 
   <!-- iPhone 6 / 6+ -->
@@ -116,7 +116,7 @@
   <splash src="splashes/android/hdpi.png" platform="android" qualifier="hdpi" />
   <splash src="splashes/android/xhdpi.png" platform="android" qualifier="xhdpi" />
   <splash src="splashes/android/xxhdpi.png" platform="android" qualifier="xxhdpi" />
-  <splash src="splashes/android/xxxhdpi.png" platform="android" qualifier="xxhdpi" />
+  <splash src="splashes/android/xxxhdpi.png" platform="android" qualifier="xxxhdpi" />
   <splash src="splashes/android/xxxhdpi.png" platform="android" qualifier="fr-xhdpi" />
 
   <!-- iOS only -->
