@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<widget xmlns = "http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.DMI.eTechChef" version="0.0.4">
+<widget xmlns = "http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.DMI.eTechChef" version="1.0.2019">
   <name>eTECH CHEF</name>
-  <description>App for DMI’s 7th annual TECH CHEF grilling competition.</description>
+  <description>App for DMI’s 8th annual TECH CHEF grilling competition.</description>
   <author href="http://DMInc.com" email="amathew@dminc.com">Anish Mathew</author>
   
   <!-- <plugin name="org.apache.cordova.splashscreen" version="0.2.7" source="pgb"/> -->
@@ -24,7 +24,7 @@
   <content src="index.html" />
   
   <!-- Preferences-->
-  <preference name="phonegap-version" value="cli-6.5.0" />
+  <preference name="phonegap-version" value="cli-8.1.1" />
   <preference name="orientation" value="portrait" />
  <!-- <preference name="target-device" value="universal" /> -->
   <preference name="fullscreen" value="false" />
@@ -117,5 +117,14 @@
   <splash src="splashes/android/xxhdpi.png" platform="android" qualifier="xxhdpi" />
   <splash src="splashes/android/xxxhdpi.png" platform="android" qualifier="fr-xhdpi" />
 
+  <!-- iOS only -->
+  <preference name="deployment-target" value="7.0" />
+
+  <!-- Android only -->
+  <preference name="android-build-tool" value="ant|gradle" />
+  <preference name="android-minSdkVersion" value="10" />
+  <preference name="android-maxSdkVersion" value="28" />
+  <preference name="android-targetSdkVersion" value="28" />
+  <preference name="android-installLocation" value="auto" />
  
 </widget >
